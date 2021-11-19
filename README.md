@@ -57,6 +57,10 @@ This app allows users to create a profile where they input their name, age, heig
 * Feed Page
     * User can see followed users and their activity for activity, diet, and well-being
 
+* Walkthrough gif of Login page
+![A7VJqMehNW](https://user-images.githubusercontent.com/77079349/142573923-2779d804-7af2-44c6-a3b7-d316aca5e983.gif)
+
+
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
