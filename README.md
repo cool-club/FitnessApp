@@ -12,6 +12,7 @@ Unit 8: Group Milestone
 ## Overview
 ### Description
 This app allows users to create a profile where they input their name, age, height/weight, picture, and bio. Users can interact and follow other users. There are different tabs in the app for users to enter data into an activity tracker, diet tracker, and well-being tracker. The activity tracker tracks how many minutes exercised and/or miles walked. The diet tracker tracks consumption such as how many cups of water and different meals throughout the day. The well-being tracker tracks how the user is feeling that day and how many hours of sleep they got.
+collab with @codepathreview
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
