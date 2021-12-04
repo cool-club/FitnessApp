@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Fitness App</string>
+    <string name="app_name">Instagram</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Paste BOTH strings as required -->
+    <string name="back4app_app_id">wq7WAUT4gXGN9UxUwU1QCcVylpc1ByMvf0La4Oyl</string>
+    <string name="back4app_client_key">wgGa4O5cco5DCGpYGLmNAQH2hE1vdL7VyoIp90Mk</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
