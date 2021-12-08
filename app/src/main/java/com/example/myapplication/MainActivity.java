@@ -22,6 +22,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.myapplication.fragments.ActivityFragment;
 import com.example.myapplication.fragments.ComposeFragment;
 import com.example.myapplication.fragments.PostsFragment;
 import com.example.myapplication.fragments.ProfileFragment;
@@ -61,6 +62,11 @@ public class MainActivity extends AppCompatActivity {
                         //TODO: update fragment
                         Toast.makeText(MainActivity.this, "Home!", Toast.LENGTH_SHORT).show();
                         fragment = new PostsFragment();
+                        break;
+                    case R.id.action_tracker:
+                        //TODO: update fragment
+                        Toast.makeText(MainActivity.this, "Activity Tracker!", Toast.LENGTH_SHORT).show();
+                        fragment = new ActivityFragment();
                         break;
                     case R.id.action_compose:
                         Toast.makeText(MainActivity.this, "Compose!", Toast.LENGTH_SHORT).show();
