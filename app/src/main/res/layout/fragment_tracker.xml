@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".ActivityFragment">
+
+    <TextView
+        android:id="@+id/minExcersice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number of min worked out"
+        android:text="Enter number of min worked out" />
+
+    <TextView
+        android:id="@+id/cupWater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How many cups of water have you drank?" />
+
+    <Button
+        android:id="@+id/btnTracker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/minExcersice"
+        android:layout_marginTop="71dp"
+        android:backgroundTint="#9A9A9A"
+        android:text="ENTER" />
 
 </LinearLayout>

@@ -90,8 +90,6 @@ public class ComposeFragment extends Fragment {
                 goLoginActivity();
             }
 
-
-
         });
 
 
