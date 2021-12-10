@@ -10,14 +10,14 @@
     <TextView
         android:id="@+id/minExcersice"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="46dp"
         android:hint="Enter number of min worked out"
         android:text="Enter number of min worked out" />
 
     <TextView
         android:id="@+id/cupWater"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="How many cups of water have you drank?" />
 
     <Button
