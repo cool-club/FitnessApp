@@ -1,93 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivFitnessLogo"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        app:srcCompat="@drawable/fitnesslogo" />
 
     <TextView
-        android:id="@+id/tvProfileName"
+        android:id="@+id/tvUsername"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="20dp"
-        android:text="Name"
-        android:textAlignment="textStart"
-        android:textSize="16sp" />
+        android:layout_height="57dp"
+        android:text="@TestAccount2"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="34sp"
+        android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="169dp"
-        android:layout_height="22dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="87dp"
-        android:layout_marginEnd="187dp"
-        android:layout_toEndOf="@+id/tvProfileName"
-        android:ems="10"
-        android:inputType="textPersonName" />
+    <ImageView
+        android:id="@+id/ivSelfie"
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/tvProfileWeight"
+        android:id="@+id/tvDateJoined"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvProfileName"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="-2dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="2dp"
-        android:text="Weight"
-        android:textAlignment="textStart"
-        android:textSize="16sp" />
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="Joined: 11/12/2018"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tvProfileHeight"
+    <RelativeLayout
+        android:id="@+id/relativeLayoutName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="-1dp"
-        android:text="Height"
-        android:textAlignment="textStart"
-        android:textSize="16sp" />
+        android:layout_height="55dp">
 
-    <EditText
-        android:id="@+id/etHeight"
-        android:layout_width="184dp"
-        android:layout_height="19dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="102dp"
-        android:layout_marginTop="111dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/tvNameText"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Name:"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/etWeight"
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="227dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/tvNameText"
+            android:gravity="center"
+            android:text="Kevin"
+            android:textAlignment="center"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutHeight"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="87dp"
-        android:layout_marginTop="190dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        android:layout_height="57dp">
 
-    <Button
-        android:id="@+id/btnSave"
+        <TextView
+            android:id="@+id/tvHeightText"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Height:"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="227dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/tvHeightText"
+            android:gravity="center"
+            android:text="6'2&quot;"
+            android:textAlignment="center"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutWeight"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="286dp"
-        android:text="Save" />
+        android:layout_height="55dp">
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/tvWeightText"
+            android:layout_width="184dp"
+            android:layout_height="126dp"
+            android:gravity="center"
+            android:text="Weight:"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvWeight"
+            android:layout_width="226dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="1dp"
+            android:layout_toEndOf="@+id/tvWeightText"
+            android:gravity="center"
+            android:text="165 lbs"
+            android:textAlignment="center"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+</LinearLayout>
