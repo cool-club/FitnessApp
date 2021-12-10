@@ -51,7 +51,6 @@ public class ComposeFragment extends Fragment {
     private Button btnCaptureImage;
     private ImageView ivPostImage;
     private Button btnSubmit;
-    private Button logOut;
     private File photoFile;
     public String photoFileName = "photo.jpg";
 
@@ -79,18 +78,7 @@ public class ComposeFragment extends Fragment {
         btnCaptureImage = view.findViewById(R.id.btnCaptureImage);
         ivPostImage = view.findViewById(R.id.ivPostImage);
         btnSubmit = view.findViewById(R.id.btnSubmit);
-        logOut = view.findViewById(R.id.logOut);
 
-        logOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ParseUser.logOut();
-                ParseUser currentUser = ParseUser.getCurrentUser(); // this will now be null
-                Toast.makeText(getContext(), "Logged out!", Toast.LENGTH_SHORT).show() ;
-                goLoginActivity();
-            }
-
-        });
 
 
         btnCaptureImage.setOnClickListener(new View.OnClickListener() {
@@ -174,12 +162,6 @@ public class ComposeFragment extends Fragment {
         // Return the file target for the photo based on filename
         return new File(mediaStorageDir.getPath() + File.separator + fileName);
 
-    }
-
-    private void goLoginActivity() {
-        Intent i  = new Intent(getContext(), LoginActivity.class);
-        startActivity(i);
-        getActivity().finish();
     }
 
     private void savePost(String description, ParseUser currentUser, File photoFile) {

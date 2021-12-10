@@ -22,12 +22,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.LoginActivity;
 import com.example.myapplication.MainActivity;
 import com.example.myapplication.Post;
 import com.example.myapplication.R;
+import com.google.android.material.textview.MaterialTextView;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseFile;
@@ -46,11 +48,15 @@ import java.util.List;
 public class ProfileFragment extends Fragment {
 
     public static final String TAG = "ProfileFragment";
-    private EditText etName;
-    private EditText etWeight;
-    private EditText etHeight;
+    private MaterialTextView tvUsername;
+    private ImageView ivSelfie;
+    private MaterialTextView tvDateJoined;
+    private MaterialTextView tvName;
+    private MaterialTextView tvHeight;
+    private MaterialTextView tvWeight;
+    private Button logOut;
     private Button btnSave;
-
+    ParseUser currentUser;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -72,10 +78,21 @@ public class ProfileFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        etName = view.findViewById(R.id.etName);
-        etWeight = view.findViewById(R.id.etWeight);
-        etHeight = view.findViewById(R.id.etHeight);
-        btnSave = view.findViewById(R.id.btnSave);
+        currentUser = ParseUser.getCurrentUser();
+
+        tvUsername = view.findViewById(R.id.tvUsername);
+        ivSelfie = view.findViewById(R.id.ivSelfie);
+        tvDateJoined = view.findViewById(R.id.tvDateJoined);
+        tvName = view.findViewById(R.id.tvName);
+        tvWeight = view.findViewById(R.id.tvWeight);
+        tvHeight = view.findViewById(R.id.tvHeight);
+        logOut = view.findViewById(R.id.logOut2);
+        Log.e(TAG, "onViewCreated: ProfileFragment");
+
+
+        tvUsername.setText("@" + currentUser.getUsername());
+        //tvName.setText(currentUser.getString());
+
 
         /* btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,6 +104,17 @@ public class ProfileFragment extends Fragment {
 
         });
         */
+
+        logOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ParseUser.logOut();
+                ParseUser currentUser = ParseUser.getCurrentUser(); // this will now be null
+                Toast.makeText(getContext(), "Logged out!", Toast.LENGTH_SHORT).show() ;
+                goLoginActivity();
+            }
+
+        });
 
     }
 

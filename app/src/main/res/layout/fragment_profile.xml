@@ -9,39 +9,40 @@
     <ImageView
         android:id="@+id/ivFitnessLogo"
         android:layout_width="match_parent"
-        android:layout_height="68dp"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/fitnesslogo" />
 
     <TextView
         android:id="@+id/tvUsername"
         android:layout_width="match_parent"
-        android:layout_height="57dp"
+        android:layout_height="56dp"
+        android:gravity="center"
         android:text="@TestAccount2"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textSize="34sp"
+        android:textSize="28sp"
         android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/ivSelfie"
         android:layout_width="match_parent"
-        android:layout_height="236dp"
+        android:layout_height="162dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tvDateJoined"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Joined: 11/12/2018"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="22sp"
         android:textStyle="bold" />
 
     <RelativeLayout
         android:id="@+id/relativeLayoutName"
         android:layout_width="match_parent"
-        android:layout_height="55dp">
+        android:layout_height="48dp">
 
         <TextView
             android:id="@+id/tvNameText"
@@ -50,7 +51,7 @@
             android:gravity="center"
             android:text="Name:"
             android:textAlignment="center"
-            android:textSize="34sp"
+            android:textSize="27sp"
             android:textStyle="bold" />
 
         <TextView
@@ -64,14 +65,14 @@
             android:gravity="center"
             android:text="Kevin"
             android:textAlignment="center"
-            android:textSize="28sp" />
+            android:textSize="24sp" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/relativeLayoutHeight"
         android:layout_width="match_parent"
-        android:layout_height="57dp">
+        android:layout_height="47dp">
 
         <TextView
             android:id="@+id/tvHeightText"
@@ -80,7 +81,7 @@
             android:gravity="center"
             android:text="Height:"
             android:textAlignment="center"
-            android:textSize="34sp"
+            android:textSize="27sp"
             android:textStyle="bold" />
 
         <TextView
@@ -94,14 +95,14 @@
             android:gravity="center"
             android:text="6'2&quot;"
             android:textAlignment="center"
-            android:textSize="28sp" />
+            android:textSize="24sp" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/relativeLayoutWeight"
         android:layout_width="match_parent"
-        android:layout_height="55dp">
+        android:layout_height="46dp">
 
         <TextView
             android:id="@+id/tvWeightText"
@@ -110,7 +111,7 @@
             android:gravity="center"
             android:text="Weight:"
             android:textAlignment="center"
-            android:textSize="34sp"
+            android:textSize="27sp"
             android:textStyle="bold" />
 
         <TextView
@@ -124,7 +125,15 @@
             android:gravity="center"
             android:text="165 lbs"
             android:textAlignment="center"
-            android:textSize="28sp" />
+            android:textSize="24sp" />
+
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/logOut2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="LOG OUT" />
 
 </LinearLayout>
