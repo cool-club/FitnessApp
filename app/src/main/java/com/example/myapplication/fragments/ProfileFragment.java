@@ -25,10 +25,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.example.myapplication.LoginActivity;
 import com.example.myapplication.MainActivity;
 import com.example.myapplication.Post;
 import com.example.myapplication.R;
+import com.example.myapplication.UserProfile;
 import com.google.android.material.textview.MaterialTextView;
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -89,7 +91,6 @@ public class ProfileFragment extends Fragment {
         logOut = view.findViewById(R.id.logOut2);
         Log.e(TAG, "onViewCreated: ProfileFragment");
 
-
         tvUsername.setText("@" + currentUser.getUsername());
         //tvName.setText(currentUser.getString());
 
@@ -118,6 +119,40 @@ public class ProfileFragment extends Fragment {
 
     }
 
+/*
+    protected void queryUserProfile(){
+        ParseQuery<UserProfile> query = ParseQuery.getQuery(UserProfile.class);
+        query.include(UserProfile.KEY_USER);
+        query.setLimit(20);
+        query.addDescendingOrder(UserProfile.KEY_CREATED_KEY);
+        query.findInBackground(new FindCallback<UserProfile>() {
+            @Override
+            public void done(List<UserProfile> UserProfiles, ParseException e) {
+                if (e != null) {
+                    Log.e(TAG, "Issue with getting UserProfile", e);
+                    return;
+                }
+
+
+                for (UserProfile UserProfile :  UserProfiles) {
+                    Log.i(TAG, "UserProfile: " + UserProfile.getDescription() + " , username: " + UserProfile.getUser().getUsername());
+                }
+                UserProfiles.addAll(UserProfiles);
+                public void bind(UserProfile UserProfiles.get(0)) {
+                    // Bind the post data to the view elements
+                    tvDescription.setText(UserProfile.getDescription());
+                    tvUsername.setText(post.getUser().getUsername());
+                    ParseFile image = post.getImage();
+                    if(image != null){
+                        Glide.with(context).load(post.getImage().getUrl()).into(ivImage);
+                    }
+
+                }
+            }
+        });
+    }
+
+*/
 
     private void goLoginActivity() {
         Intent i  = new Intent(getContext(), LoginActivity.class);
