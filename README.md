@@ -1,6 +1,3 @@
-Unit 8: Group Milestone
-===
-
 # Fitness App
 
 ## Table of Contents
@@ -78,7 +75,7 @@ collab with @codepathreview
 * Well-being Tracker -> Input activity 
 
 ## Wireframes
-<img src="https://i.imgur.com/xQzz1Fn.png" width=600>
+<img src="https://i.imgur.com/T0LUI3H.gif" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
