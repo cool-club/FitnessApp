@@ -1,4 +1,4 @@
-# Fitness App
+Fitness App
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -56,7 +56,7 @@ collab with @codepathreview
     * User can see followed users and their activity for activity, diet, and well-being
 
 * Walkthrough gif of Login page
-![A7VJqMehNW](https://user-images.githubusercontent.com/77079349/142573923-2779d804-7af2-44c6-a3b7-d316aca5e983.gif)
+![A7VJqMehNW](https://i.imgur.com/T0LUI3H.gif)
 
 
 ### 3. Navigation
@@ -75,7 +75,7 @@ collab with @codepathreview
 * Well-being Tracker -> Input activity 
 
 ## Wireframes
-<img src="https://i.imgur.com/T0LUI3H.gif" width=600>
+<img src="https://i.imgur.com/xQzz1Fn.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
