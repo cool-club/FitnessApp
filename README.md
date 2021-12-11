@@ -55,10 +55,9 @@ collab with @codepathreview
 * Feed Page
     * User can see followed users and their activity for activity, diet, and well-being
 
-* Walkthrough Gif Of Login Page
-![A7VJqMehNW]
+* Walkthrough gif of Login page
+![A7VJqMehNW](https://i.imgur.com/T0LUI3H.gif)
 
-(https://i.imgur.com/T0LUI3H.gif)
 
 ### 3. Navigation
 
